@@ -138,6 +138,25 @@ footer{
     justify-content: center;
     align-items: center;
 }
+#salthead{
+    height:53vh;
+    width:100vw;
+    background-color:#f7f7f5;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.salttitle{
+    height: 35vh;
+    width:100vw;
+    background-color:#256E4C;
+    text-align: center;
+    margin-top: 10vh;
+    border-top: #256e4c solid 3.5px;
+    border-bottom: #256e4c solid 3.5px;
+}
 .halfone{
     width: 100vw;
     height: 55vh;
@@ -185,7 +204,7 @@ footer{
 .salthalfone{
     width: 100vw;
     height: 90vh;
-    background-color:#E6D1B8;
+    background-color:#f7f7f5;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -195,7 +214,7 @@ footer{
 .salthalftwo{
     width: 100vw;
     height: 90vh;
-    background-color:#E6D1B8;
+    background-color:#f7f7f5;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -310,6 +329,20 @@ footer{
     background-color:#256E4C;
     text-align: center;
     border: #b5a794 solid 3.5px;
+}
+.salttext{
+    height: 25vh;
+    width:23vw;
+    background-color:#f7f7f5;
+    text-align: center;
+    border: #256E4C solid 3.5px;
+}
+.saltparaimage{
+    height: 45vh;
+    width:26vw;
+    background-color:#f7f7f5;
+    text-align: center;
+    border: #256e4c solid 3.5px;
 }
 #alti1{
     margin-right:13vw;
@@ -485,6 +518,43 @@ footer{
         height: 150vh;
     }
     .althalftwo{
+        flex-wrap:nowrap;
+        flex-direction: column;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        height: 150vh;
+    }
+    .salttext{
+        height: 30vh;
+        width:70vw;
+        margin-top: 2vh;
+    }
+    .saltparaimage{
+        height: 35vh;
+        width:80vw;
+    }
+    #salti1{
+        order:1;
+        margin-right:0vw;
+    }
+    #salti2{
+        order:3;
+        margin-top: 5vh;
+    }
+    #saltt1{
+        order:2;
+        margin-right:0vw;
+        margin-bottom: 5vh;
+    }
+    #saltt2{
+        order:4;
+    }
+    .salthalfone{
+        flex-wrap:nowrap;
+        flex-direction: column;
+        height: 150vh;
+    }
+    .salthalftwo{
         flex-wrap:nowrap;
         flex-direction: column;
         padding-top: 10vh;
