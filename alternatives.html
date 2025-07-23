@@ -12,7 +12,22 @@
     </head>
     <body>
         <nav>
-                
+			    <a href="index.html" class="nlinks">Home</a>
+          <a href="tips.html" class="nlinks">Tips</a>
+          <a href="alternatives.html" id="selectedlink">Alternatives</a>
+          <a href="international.html" class="nlinks">International day</a>
+          <a href="sources.html" class="nlinks">More info</a>   
+          <span id="burger" onclick="openNav()">&#9776;</span>
+          <div id="drop" class="backdrop">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="backdroplinks">
+              <a href="index.html">Home</a>
+              <a href="tips.html">Tips</a>
+              <a href="alternatives.html">Alternatives</a>
+              <a href="international.html">International day</a>
+              <a href="sources.html">More info</a>
+            </div>
+          </div>       
         </nav>
         <div id="althead">
           <div class="alttitle">

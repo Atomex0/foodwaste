@@ -1,7 +1,7 @@
-{/* <script type="text/javascript">
- <!--
-  if (screen.width <= 700) {
-  window.location = "http://www.mobile-site.com";
-  }
- //-->
-</script> */}
+function openNav() {
+  document.getElementById("drop").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("drop").style.height = "0%";
+}

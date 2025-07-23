@@ -13,6 +13,37 @@ nav{
 	padding:0;
 	border-bottom:0.8vh solid #256e4c ;
     align-items: center;
+    justify-content: right;
+}
+#selectedlink{
+	color: white;
+	font-size: 35px;
+	font-family: "Open Sans", sans-serif;
+	text-decoration:none;
+    padding:1.55vw;
+    background-color: #256e4c;
+    margin-right: 1vw;
+    box-sizing: border-box;
+    height:100%;
+}
+.nlinks{
+    color: black;
+	font-size: 35px;
+	font-family: "Open Sans", sans-serif;
+	text-decoration:none;
+    padding:1.35vw;
+    background-color: #3f9868;
+    margin-right: 1vw;
+    box-sizing: border-box;
+    height:100%;
+}
+.nlinks:hover{
+    color: white;
+    background-color:#256e4c;
+}
+#selectedlink:hover{
+	color: black;
+    background-color: #256e4c;
 }
 #head{
     height:58.2vh;
@@ -365,6 +396,50 @@ footer{
     background-color:black;
     text-align: center;
 }
+.backdrop {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.backdroplinks {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.backdrop a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #bdd3c9;
+    display: block;
+    transition: 0.3s;
+}
+.backdrop a:hover, .backdrop a:focus {
+    color: #f1f1f1;
+}
+.backdrop .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+#burger{
+    visibility: hidden;
+    font-size:1px; 
+    cursor:pointer;
+}
+#burger:hover{
+    color: white;
+}
 @media (max-width: 900px) {
     #head{
         height:50vh;
@@ -560,5 +635,16 @@ footer{
         padding-top: 10vh;
         padding-bottom: 5vh;
         height: 150vh;
+    }
+    #burger{
+        visibility: visible;
+        font-size:55px; 
+        margin-right:5vw;
+    }
+    .nlinks{
+        visibility: hidden;
+    }
+    #selectedlink{
+        visibility: hidden;
     }
 }
