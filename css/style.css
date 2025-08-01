@@ -20,7 +20,7 @@ nav{
 	font-size: 35px;
 	font-family: "Open Sans", sans-serif;
 	text-decoration:none;
-    padding:1.55vw;
+    padding:1.35vw;
     background-color: #256e4c;
     margin-right: 1vw;
     box-sizing: border-box;
@@ -230,7 +230,7 @@ footer{
     padding-top: 13vh;
     flex-wrap: wrap;
     padding-top: 20vh; 
-    padding-bottom: 35vh"
+    padding-bottom: 35vh;
 }
 .salthalfone{
     width: 100vw;
@@ -253,7 +253,7 @@ footer{
     padding-top: 13vh;
     flex-wrap: wrap;
     padding-top: 20vh; 
-    padding-bottom: 35vh"
+    padding-bottom: 35vh;
 }
 .paraimage{
     height: 45vh;
@@ -379,6 +379,12 @@ footer{
     margin-right:13vw;
 }
 #altt1{
+    margin-right:16vw;
+}
+#alti12{
+    margin-right:13vw;
+}
+#altt12{
     margin-right:16vw;
 }
 #timecon{
@@ -587,6 +593,22 @@ footer{
     #altt2{
         order:4;
     }
+    #alti12{
+        order:1;
+        margin-right:0vw;
+    }
+    #alti22{
+        order:3;
+        margin-top: 5vh;
+    }
+    #altt12{
+        order:2;
+        margin-right:0vw;
+        margin-bottom: 5vh;
+    }
+    #altt22{
+        order:4;
+    }    
     .althalfone{
         flex-wrap:nowrap;
         flex-direction: column;
