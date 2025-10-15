@@ -8,7 +8,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>HOME</title>
       <link rel="stylesheet" href="css/style.css">
-      <script src="js/script.js"></script>
     </head>
     <body>
         <nav>
@@ -16,44 +15,87 @@
           <a href="tips.html" class="nlinks">Tips</a>
           <a href="alternatives.html" class="nlinks">Alternatives</a>
           <a href="international.html" class="nlinks">International day</a>
-          <a href="sources.html" class="nlinks">More info</a>
+          <!-- Burger menu for mobile code -->
           <span id="burger" onclick="openNav()">&#9776;</span>
-          <div id="drop" class="backdrop">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="backdroplinks">
+          <div id="drop" class="backdrop" style="position: absolute;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="position: absolute;">&times;</a>
+            <!-- Links for within burger -->
+            <div class="backdroplinks" style="position: absolute;">
               <a href="index.html">Home</a>
               <a href="tips.html">Tips</a>
               <a href="alternatives.html">Alternatives</a>
               <a href="international.html">International day</a>
-              <a href="sources.html">More info</a>
             </div>
           </div>
         </nav>
         <div id="head">
-          <div class="maintitle">
+          <!-- Code for the mobile header -->
+          <div id="mobileheader">
+            <img src="images/mobilehead.png" alt="Picture of wasted food" id="mobilehead">
+            <p id="mobileheadt">The Rising Issue of Food Waste and How You Can Reduce How Much You Waste</p>
           </div>
-          <div class="maintitle">
+          <!-- Code for desktop header -->
+          <div class="maintitle2">
+            <header>
+                <p id="texttitle">The Rising Issue of<br>Food Waste and<br>How You Can<br>Reduce How<br>Much You<br>Waste</p>
+            </header>
+          </div>
+          <div class="maintitle" style="margin-left: 1.5vw;">
+              <img src="images/headimg1.jpg" alt="Picture of wasted food" id="himg1">
           </div>
         </div>
         <div class="para">
-          <div id="textfillin"></div>
-        </div>
-        <div id="statcon">
-          <div class="statfillin" style="margin-top: 0;"></div>
-          <div class="statfillin"></div>
-          <div class="statfillin"></div>
-          <div class="statfillin"></div>
+          <div id="textfillin">
+            <p id="intro" style="margin-top: 4vh;"></p>
+          </div>
         </div>
         <div id="homebreak"></div>
         <div id="slidecon">
-          <div id="slidefillin"></div>
+          <p class="slidearrows" onclick="plusSlides(-1)">&#10094;</p>
+          <div id="slidefillin">
+            <img src="images/slideimg1.jpg" alt="Picture of wasted food" class="slides">
+            <img src="images/slideimg2.jpg" alt="Picture of wasted food" class="slides">
+            <img src="images/slideimg3.jpg" alt="Picture of wasted food" class="slides">
+            <img src="images/slideimg4.jpg" alt="Picture of wasted food" class="slides">
+            <img src="images/slideimg5.jpg" alt="Picture of wasted food" class="slides">
+          </div>
+          <p class="slidearrows" onclick="plusSlides(1)">&#10095;</p>
         </div>
         <div class="basicdiv">
-          <div id="textfillin2"></div>
-          <div class="imgfillin"></div>
+          <div id="textfillin2">
+            <p id="homep"></p>
+          </div>
+          <div class="imgfillin2"><img src="images/conimg1.jpg" alt="Picture of a bin with wasted food" id="himg1"></div>
         </div>
         <footer>
 
         </footer>
+        <script>
+          let slideIndex = 1;
+              show(slideIndex);
+              
+          function plusSlides(n) {
+            show(slideIndex += n);
+          }	
+          function currentSlide(n) {		show(slideIndex = n);	}
+
+          function show(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+          }
+          function openNav() {
+            document.getElementById("drop").style.height = "100vh";
+          }
+
+          function closeNav() {
+            document.getElementById("drop").style.height = "0%";
+          }
+        </script>
     </body>
 </html>
